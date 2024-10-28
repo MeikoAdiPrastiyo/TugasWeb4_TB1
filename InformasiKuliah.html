@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS - Informasi Kuliah</title>
+    <link rel="stylesheet" href="FormatUts.css">
+    <script>
+        function highlightTable(element) {
+            const tables = document.querySelectorAll('.jadwal table');
+            tables.forEach((tbl) => tbl.classList.remove('highlight'));
+            element.classList.add('highlight');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Informasi Daftar Mata Kuliah Semester 3</h1>
+    </header>
+
+    <section class="jadwal">
+        <h2>Senin</h2>
+        <table onclick="highlightTable(this)">
+            <tr><th>Kode MK</th><th>Mata Kuliah</th><th>Jadwal Kuliah</th><th>Dosen Pengampu</th></tr>
+            <tr>
+                <td>U002100011</td>
+                <td>KEWIRAUSAHAAN I</td>
+                <td>07:30 - 09:10 WIB</td>
+                <td>Firdaus, SE, ME</td>
+            </tr>
+        </table>
+
+        <h2>Rabu</h2>
+        <table onclick="highlightTable(this)">
+            <tr><th>Kode MK</th><th>Mata Kuliah</th><th>Jadwal Kuliah</th><th>Dosen Pengampu</th></tr>
+            <tr>
+                <td>F062100005</td>
+                <td>PEMROGRAMAN BERORIENTASI OBJEK</td>
+                <td>07:30 - 10:00 WIB</td>
+                <td>Lukman Hakim, ST, M.Kom</td>
+            </tr>
+            <tr>
+                <td>W182100015</td>
+                <td>PEMODELAN PROSES BISNIS</td>
+                <td>10:15 - 12:45 WIB</td>
+                <td>Fajar Masya, Ir. MMSI</td>
+            </tr>
+            <tr>
+                <td>W182100010</td>
+                <td>ANALISA PERANCANGAN SISTEM INFORMASI</td>
+                <td>13:15 - 15:45 WIB</td>
+                <td>Yunita Sartika Sari, S.Kom, M.Kom</td>
+            </tr>
+        </table>
+
+        <h2>Kamis</h2>
+        <table onclick="highlightTable(this)">
+            <tr><th>Kode MK</th><th>Mata Kuliah</th><th>Jadwal Kuliah</th><th>Dosen Pengampu</th></tr>
+            <tr>
+                <td>W182100012</td>
+                <td>PEMROGRAMAN WEB</td>
+                <td>07:30 - 10:00 WIB</td>
+                <td>Muhammad Ali Akbar, M.Kom</td>
+            </tr>
+            <tr>
+                <td>W182100032</td>
+                <td>PEMROGRAMAN MOBILE</td>
+                <td>10:15 - 12:45 WIB</td>
+                <td>Muhammad Ali Akbar, M.Kom</td>
+            </tr>
+        </table>
+
+        <h2>Jumat</h2>
+        <table onclick="highlightTable(this)">
+            <tr><th>Kode MK</th><th>Mata Kuliah</th><th>Jadwal Kuliah</th><th>Dosen Pengampu</th></tr>
+            <tr>
+                <td>U002100001</td>
+                <td>PENDIDIKAN AGAMA ISLAM</td>
+                <td>07:30 - 09:10 WIB</td>
+                <td>Nini Nadhiroh, S.Pd.I, M.Pd</td>
+            </tr>
+            <tr>
+                <td>U002100007</td>
+                <td>PANCASILA</td>
+                <td>09:30 - 11:10 WIB</td>
+                <td>Singmin Johanes Lo, Dr, MM</td>
+            </tr>
+            <tr>
+                <td>U002100009</td>
+                <td>BAHASA INDONESIA</td>
+                <td>14:00 - 15:40 WIB</td>
+                <td>Diah Utami, ST, MT</td>
+            </tr>
+        </table>
+        <div class="containers">
+            <a href="UTS2016.html" class="back-button">&larr; Kembali ke Profil</a>
+        </div>
+        
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>
